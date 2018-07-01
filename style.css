@@ -1,6 +1,29 @@
-div {
-    border: 1px solid red;
-    width: 110px;
+body {
+    background: red;
 }
 
+.main {
+    
+    border: 1px solid white;
+    color: turquoise;
+    width: 500px;
+    position: relative;
+    margin: 100px auto;
+    padding: 30px;
+}
 
+.main::before {
+    border: 1px solid white;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: rotate(45deg);
+    content: '';
+    margin-left: -25px;
+    margin-top: -13px;
+    background-color: red;
+    border-bottom: 0px solid red;
+    border-right: 0px solid red;
+}
